@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ActionBarDemo.ActionBarTest">
+
+    <Button
+        android:id="@+id/showBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示ActionBar" />
+
+    <Button
+        android:id="@+id/hideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="隐藏ActionBar" />
+
+    <Button
+        android:id="@+id/btnBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showBar"
+        android:text="ActionBar图标" />
+
+    <Button
+        android:id="@+id/btnBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hideBar"
+        android:text="supportV4支持包" />
+
+    <Button
+        android:id="@+id/btnBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnBar2"
+        android:text="ActionBar下拉" />
+
+    <Button
+        android:id="@+id/btnBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBar1"
+        android:text="handler,loop测试" />
+
+    <Button
+        android:id="@+id/btnBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBar4"
+        android:text="asyncTask测试" />
+</RelativeLayout>
+

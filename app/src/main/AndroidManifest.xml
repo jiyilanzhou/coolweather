@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hoperun.myapplication" >
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CodeViewActivity"
+            android:label="@string/title_activity_code_view" />
+        <activity
+            android:name=".MixView"
+            android:label="@string/title_activity_mix_view" />
+        <activity
+            android:name=".CustomView"
+            android:label="@string/title_activity_custom_view" />
+        <activity
+            android:name=".FrameLayoutDemo"
+            android:label="@string/title_activity_custom_view" />
+        <activity
+            android:name=".GridLayoutDemo"
+            android:label="@string/title_activity_grid_layout_demo" />
+        <activity
+            android:name=".TextViewDemo"
+            android:label="@string/title_activity_text_view_demo" />
+        <activity
+            android:name=".TextView_connerborder"
+            android:label="@string/title_activity_text_view_connerborder" />
+        <activity
+            android:name=".EditViewDemo"
+            android:label="@string/title_activity_edit_view_demo" />
+        <activity
+            android:name=".ButtonDemo"
+            android:label="@string/title_activity_button_demo" />
+        <activity
+            android:name=".CheckBoxDemo"
+            android:label="@string/title_activity_check_box_demo" />
+        <activity
+            android:name=".ToggleButtonDemo"
+            android:label="@string/title_activity_toggle_button_demo" />
+        <activity
+            android:name=".ClockDemo"
+            android:label="@string/title_activity_clock_demo" />
+        <activity
+            android:name=".ChronometerDemo"
+            android:label="@string/title_activity_chronometer_demo" />
+        <activity
+            android:name=".ImageViewDemo"
+            android:label="@string/title_activity_image_view_demo" />
+        <activity
+            android:name=".ImageButtonDemo"
+            android:label="@string/title_activity_image_button_demo" />
+        <activity
+            android:name=".QuickContactBadgeDemo"
+            android:label="@string/title_activity_quick_contact_badge_demo" />
+        <activity
+            android:name="com.example.adapterview.ArrayAdapterDemo"
+            android:label="@string/title_activity_array_adapter_demo" />
+        <activity
+            android:name="com.example.adapterview.AdapterViewDemo"
+            android:label="@string/title_activity_adapter_view_demo" />
+        <activity
+            android:name="com.example.adapterview.SimpleAdapterDemo"
+            android:label="@string/title_activity_simple_adapter_demo" />
+        <activity
+            android:name="com.example.adapterview.BaseAdapterDemo"
+            android:label="@string/title_activity_base_adapter_demo" />
+        <activity
+            android:name="com.example.adapterview.AutoCompleteTextDemo"
+            android:label="@string/title_activity_auto_complete_text_demo" />
+        <activity
+            android:name="com.example.adapterview.GidViewDemo"
+            android:label="@string/title_activity_gid_view_demo" />
+        <activity
+            android:name="com.example.adapterview.AdapterViewFlipperDemo"
+            android:label="@string/title_activity_adapter_view_flipper_demo" />
+        <activity
+            android:name="com.example.adapterview.StackView"
+            android:label="@string/title_activity_stack_view" />
+        <activity
+            android:name="com.example.progressbardemo.ProgressBarDemo"
+            android:label="@string/title_activity_progress_bar_demo" />
+        <activity
+            android:name="com.example.progressbardemo.ProgeressBarTitleDemo"
+            android:label="@string/title_activity_progeress_bar_title_demo" />
+        <activity
+            android:name="com.example.progressbardemo.SeekBarDemo"
+            android:label="@string/title_activity_seek_bar_demo" />
+        <activity
+            android:name="com.example.ViewAnimatorDemo.ViewSwitcherDemo"
+            android:label="@string/title_activity_view_switcher_demo" />
+        <activity
+            android:name="com.example.ViewAnimatorDemo.ImageSwitcherDemo"
+            android:label="@string/title_activity_image_switcher_demo" />
+        <activity
+            android:name="com.example.ViewAnimatorDemo.TextSwitcherDemo"
+            android:label="@string/title_activity_text_switcher_demo" />
+        <activity
+            android:name="com.example.ViewAnimatorDemo.ViewFlipperDemo"
+            android:label="@string/title_activity_view_flipper_demo" />
+        <activity
+            android:name="com.example.MixComponent.CalendarViewDemo"
+            android:label="@string/title_activity_calendar_view_demo" />
+        <activity
+            android:name="com.example.MixComponent.ChooseDate"
+            android:label="@string/title_activity_choose_date" />
+        <activity
+            android:name="com.example.MixComponent.NumberPickerDemo"
+            android:label="@string/title_activity_number_picker_demo" />
+        <activity
+            android:name="com.example.MixComponent.SearchViewDemo"
+            android:label="@string/title_activity_search_view_demo" />
+        <activity
+            android:name="com.example.MixComponent.TabHostDemo"
+            android:label="@string/title_activity_tab_host_demo" />
+        <activity
+            android:name="com.example.MixComponent.NotificationDemo"
+            android:label="@string/title_activity_notification_demo" />
+        <activity
+            android:name="com.example.alertdialogdemo.AlertDialogDemo"
+            android:label="@string/title_activity_alert_dialog_demo" />
+        <activity
+            android:name="com.example.alertdialogdemo.PopupWindowDemo"
+            android:label="@string/title_activity_popup_window_demo" />
+        <activity
+            android:name="com.example.alertdialogdemo.DatedialogDemo"
+            android:label="@string/title_activity_datedialog_demo" />
+        <activity
+            android:name="com.example.alertdialogdemo.ProgressDialogDemo"
+            android:label="@string/title_activity_progress_dialog_demo" />
+        <activity
+            android:name="com.example.MenuDemo.MenuDemo"
+            android:label="@string/title_activity_menu_demo" />
+        <activity
+            android:name="com.example.MenuDemo.MenuResTest"
+            android:label="@string/title_activity_menu_res_test" />
+        <activity
+            android:name="com.example.MenuDemo.PopupMenuDemo"
+            android:label="@string/title_activity_poppup_menu_demo" />
+        <activity
+            android:name="com.example.ActionBarDemo.ActionBarTest"
+            android:label="@string/title_activity_action_bar_test" />
+        <activity
+            android:name="com.example.ActionBarDemo.ActionHomeTest"
+            android:label="@string/title_activity_action_home_test" />
+        <activity
+            android:name="com.example.MenuDemo.ActionBar_TabNav"
+            android:label="@string/title_activity_action_bar__tab_nav" />
+        <activity
+            android:name="com.example.ActionBarDemo.ActionBar_swipeNav"
+            android:label="@string/title_activity_action_bar_swipe_nav" />
+        <activity
+            android:name="com.example.ActionBarDemo.ActionBar_DropDown"
+            android:label="@string/title_activity_action_bar__drop_down" />
+        <activity
+            android:name="com.example.ActionBarDemo.HandlerTest"
+            android:label="@string/title_activity_handler_test" />
+        <activity
+            android:name="com.example.ActionBarDemo.AsyncTaskTest"
+            android:label="@string/title_activity_async_task_test" />
+        <activity
+            android:name="com.example.ActivityAndFragment.PreferenceActivityTest"
+            android:label="@string/title_activity_preference_actitity_test" />
+        <activity
+            android:name="com.example.FragmentTest.FragmentTest"
+            android:label="@string/title_activity_fragment_test" />
+        <activity
+            android:name="com.example.FragmentTest.SeniorFragmentTest"
+            android:label="@string/title_activity_senior_fragment_test" />
+        <activity
+            android:name="com.example.FragmentTest.BookDetailActivity"
+            android:label="@string/title_activity_book_detail" />
+        <activity
+            android:name="com.example.FragmentTest.FragmentDemo"
+            android:label="@string/title_activity_fragment_demo" />
+        <activity
+            android:name="com.example.FragmentTest.FragmentActivity"
+            android:label="@string/title_activity_fragment" />
+        <activity
+            android:name="com.example.FragmentTest.SecondActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.example.intent.DataTypeOverride"
+            android:label="@string/title_activity_data_type_override" />
+        <activity
+            android:name="com.example.intent.SchemeActivity"
+            android:icon="@drawable/ic_scheme"
+            android:label="@string/title_activity_scheme" >
+            <intent-filter>
+                <action android:name="aa" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.SchemeHostPortActivity"
+            android:icon="@drawable/ic_host"
+            android:label="@string/title_activity_sheme_host_port" >
+            <intent-filter>
+                <action android:name="bb" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.SchemeHostPathActivity"
+            android:icon="@drawable/ic_sp"
+            android:label="@string/title_activity_scheme_host_path" >
+            <intent-filter>
+                <action android:name="cc" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.SchemeHostPortPathActivity"
+            android:icon="@drawable/ic_path"
+            android:label="@string/title_activity_scheme_host_port_path_acitivity" >
+            <intent-filter>
+                <action android:name="dd" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.SchemeHostPortPathType"
+            android:icon="@drawable/ic_type"
+            android:label="@string/title_activity_scheme_host_port_path_type" >
+            <intent-filter>
+                <action android:name="ee" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.fkjava.org"
+                    android:mimeType="abc/xyz"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.intent.ActionData"
+            android:label="@string/title_activity_action_data" />
+        <activity
+            android:name="com.example.intent.AnimationDrawable"
+            android:label="@string/title_activity_animation_drawable" />
+        <activity
+            android:name="com.example.mediaplayer.SoundPoolTest"
+            android:label="@string/title_activity_sound_pool_test" />
+        <activity
+            android:name="com.example.mediaplayer.VideoViewTest"
+            android:label="@string/title_activity_video_view_test" />
+        <activity
+            android:name="com.example.mediaplayer.SurfaceViewPlayVideo"
+            android:label="@string/title_activity_surface_view_play_video" />
+        <activity
+            android:name="com.example.mediaplayer.MediaRecorderTest"
+            android:label="@string/title_activity_media_recorder_test" />
+        <activity
+            android:name="com.example.mediaplayer.CaptureImage"
+            android:label="@string/title_activity_capture_image" />
+        <activity
+            android:name="com.example.database.DataBaseActivity"
+            android:label="@string/title_activity_data_base" />
+        <activity
+            android:name="com.example.database.ContactTest"
+            android:label="@string/title_activity_contact_test" />
+
+        <provider
+            android:name="com.example.database.DatabaseProvider"
+            android:authorities="com.example.databaseTest.provider"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.database.SMSTest"
+            android:label="@string/title_activity_smstest" />
+
+        <service
+            android:name="com.example.database.LongRunningService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.database.NetworkTest"
+            android:label="@string/title_activity_network_test" />
+        <activity
+            android:name="com.example.database.WebViewTest"
+            android:label="@string/title_activity_webview_test" />
+        <activity
+            android:name="com.example.location.LocationTest"
+            android:label="@string/title_activity_location_test" />
+        <activity
+            android:name="com.example.location.BaiduMapTest"
+            android:label="@string/title_activity_baidu_map_test" />
+        <activity
+            android:name="com.example.sensor.SensorTest"
+            android:label="@string/title_activity_sensor_test" >
+        </activity>
+        <activity
+            android:name="com.example.sensor.CompassTest"
+            android:label="@string/title_activity_compass_test" >
+        </activity>
+    </application>
+
+</manifest>

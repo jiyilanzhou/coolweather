@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.intent.DataTypeOverride">
+
+    <Button
+        android:id="@+id/btnIntentData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data覆盖Type" />
+
+    <Button
+        android:id="@+id/btnIntentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type覆盖Data" />
+
+    <Button
+        android:id="@+id/btnIntentAnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data和Type" />
+
+    <Button
+        android:id="@+id/btnIntent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意图1" />
+
+    <Button
+        android:id="@+id/btnIntent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意图2" />
+
+    <Button
+        android:id="@+id/btnIntent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意图3" />
+
+    <Button
+        android:id="@+id/btnIntent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意图4" />
+
+    <Button
+        android:id="@+id/btnIntent5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意图5" />
+
+    <Button
+        android:id="@+id/btnIntent6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action和Data配合使用" />
+
+    <Button
+        android:id="@+id/btnIntent7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="补间动画" />
+</LinearLayout>

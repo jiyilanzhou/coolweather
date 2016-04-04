@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.MixComponent.CalendarViewDemo">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择您的生日：" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:firstDayOfWeek="3"
+            android:focusedMonthDateColor="#f00"
+            android:selectedWeekBackgroundColor="#aff"
+            android:shownWeekCount="5"
+            android:unfocusedMonthDateColor="#f9f"
+            android:weekSeparatorLineColor="#ff0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnMix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间日期TimePicker" />
+
+            <Button
+                android:id="@+id/btnMix1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数值选择器NumberPicker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnMix2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索框SearchView" />
+
+            <Button
+                android:id="@+id/btnMix3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TabHost选项卡" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnMix4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Notifications"/>
+    </LinearLayout>
+</ScrollView>

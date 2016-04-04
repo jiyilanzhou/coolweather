@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.mediaplayer.SoundPoolTest">
+
+    <Button
+        android:id="@+id/btnPoolBomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="爆炸声" />
+
+    <Button
+        android:id="@+id/btnPoolShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="射击声" />
+
+    <Button
+        android:id="@+id/btnPoolArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="射箭声" />
+
+    <Button
+        android:id="@+id/btnMedia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VideoVie播放视频" />
+
+    <Button
+        android:id="@+id/btnMedia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SurfaceView播放视频" />
+
+    <Button
+        android:id="@+id/btnMedia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MediaRecord录音" />
+
+    <Button
+        android:id="@+id/btnMedia4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera相机" />
+</LinearLayout>

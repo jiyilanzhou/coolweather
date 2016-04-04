@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hoperun.myapplication.TextViewDemo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我爱学安卓"
+        android:textSize="20pt"
+        android:drawableEnd="@drawable/ic_launcher"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="我爱Java我爱Java我爱Java我爱Java我爱Java我爱Java我爱Java我爱Java我爱Java"
+        android:ellipsize="middle"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="邮件是kongyeeku@163.com,电话是0208-8888888"
+        android:autoLink="email|phone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试文字"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:textColor="#f00"
+        android:textSize="18pt"/>
+    <TextView
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello world"
+        android:password="true"/>
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="可勾选的文本"
+        android:checkMark="@drawable/ok"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="测试TextView圆角边框"/>
+
+</LinearLayout>

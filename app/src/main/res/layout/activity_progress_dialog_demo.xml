@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.alertdialogdemo.ProgressDialogDemo">
+
+    <Button
+        android:id="@+id/showSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="环形进度条" />
+
+    <Button
+        android:id="@+id/showIndeterminate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不显示进度的进度条" />
+
+    <Button
+        android:id="@+id/showProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示进度的进度条" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.MenuDemo.MenuResTest">
+    <item
+        android:icon="@drawable/font"
+        android:showAsAction="always|withText"
+        android:title="字体大小">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/font_10"
+                    android:title="10号大小" />
+                <item
+                    android:id="@+id/font_12"
+                    android:title="12号大小" />
+                <item
+                    android:id="@+id/font_14"
+                    android:title="14号大小" />
+                <item
+                    android:id="@+id/font_16"
+                    android:title="16号大小" />
+                <item
+                    android:id="@+id/font_18"
+                    android:title="18号大小" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/plain_item"
+        android:showAsAction="always|withText"
+        android:title="普通菜单"></item>
+    <item
+        android:icon="@drawable/color"
+        android:showAsAction="always"
+        android:title="字体颜色">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/red_font"
+                    android:title="红色" />
+                <item
+                    android:id="@+id/green_font"
+                    android:title="绿色" />
+                <item
+                    android:id="@+id/blue_font"
+                    android:title="蓝色" />
+            </group>
+        </menu>
+    </item>
+</menu>

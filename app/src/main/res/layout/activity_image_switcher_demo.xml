@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.ViewAnimatorDemo.ImageSwitcherDemo">
+
+    <Button
+        android:id="@+id/btnViewSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到ViewSwitcher" />
+    <Button
+        android:id="@+id/btnTextSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到TextSwitcher" />
+    <Button
+        android:id="@+id/btnViewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到ViewFlipper" />
+    <GridView
+        android:id="@+id/grid02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:verticalSpacing="2dp" />
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" />
+</LinearLayout>
