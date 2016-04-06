@@ -355,6 +355,8 @@
             android:name="com.example.sensor.CompassTest"
             android:label="@string/title_activity_compass_test" >
         </activity>
+        <activity android:name="com.example.coolweather.activity.ChooseAreaActivity"
+            android:label="@string/app_name"/>
     </application>
 
 </manifest>

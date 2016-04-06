@@ -342,7 +342,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:capitalize="none"
-                android:text="@string/networkTest" />
+                android:text="@string/coolweather" />
 
             <Button
                 android:id="@+id/button33"

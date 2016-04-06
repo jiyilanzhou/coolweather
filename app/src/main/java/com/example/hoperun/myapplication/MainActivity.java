@@ -20,6 +20,7 @@ import com.example.ViewAnimatorDemo.ImageSwitcherDemo;
 import com.example.ViewAnimatorDemo.ViewSwitcherDemo;
 import com.example.adapterview.AdapterViewDemo;
 import com.example.alertdialogdemo.AlertDialogDemo;
+import com.example.coolweather.activity.ChooseAreaActivity;
 import com.example.database.ContactTest;
 import com.example.database.DataBaseActivity;
 import com.example.database.NetworkTest;
@@ -239,6 +240,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.button31:
                 startActivity(new Intent(this, SensorTest.class));
+                break;
+            case R.id.button32:
+                startActivity(new Intent(this, ChooseAreaActivity.class));
                 break;
         }
     }
