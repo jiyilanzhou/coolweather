@@ -62,7 +62,7 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         cityNameText.setText(preferences.getString("city_name",""));
         temp1Text.setText(preferences.getString("temp1",""));
-        temp1Text.setText(preferences.getString("temp2",""));
+        temp2Text.setText(preferences.getString("temp2",""));
         weatherDescText.setText(preferences.getString("weather_desc",""));
         publishText.setText("今天"+preferences.getString("publish_time","")+"发布");
         currentDateText.setText(preferences.getString("current_date",""));
