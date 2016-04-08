@@ -51,17 +51,18 @@ public class ChooseAreaActivity extends Activity {
     private City selectedCity;
     private int currentLevel = LEVEL_PROVINCE;
     private boolean isFromWeatherActivity;
-//    private boolean firstChoose;
+    private boolean firstChoose = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         isFromWeatherActivity = getIntent().getBooleanExtra("from_weather_activity", false);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("city_selected", false) && !isFromWeatherActivity
-                && prefs.getBoolean("first_choose",false)) {
+        Log.d(TAG,"city_selected"+prefs.getBoolean("city_selected", false)+"isFromWeatherActivity"
+                +isFromWeatherActivity+"firstChoose"+firstChoose);
+        if (prefs.getBoolean("city_selected", false) && !isFromWeatherActivity) {
             Intent intent = new Intent(this, WeatherActivity.class);
             startActivity(intent);
-//            finish();
+            finish();
             return;
         }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -86,15 +87,11 @@ public class ChooseAreaActivity extends Activity {
                     Intent intent = new Intent(ChooseAreaActivity.this, WeatherActivity.class);
                     intent.putExtra("county_code", countyCode);
                     startActivity(intent);
-//                    finish();
+                    finish();
                 }
             }
         });
-        Log.d(TAG,"currentLevel ="+currentLevel);
-        if (currentLevel == LEVEL_PROVINCE) {
-            prefs.edit().putBoolean("first_choose",true);
             queryProvinces();
-        }
     }
 
     private void queryProvinces() {
@@ -216,13 +213,12 @@ public class ChooseAreaActivity extends Activity {
             queryCities();
         } else if (currentLevel == LEVEL_CITY) {
             queryProvinces();
-        } else if (currentLevel == LEVEL_PROVINCE){
-            finish();
-        }/*{
+        }else{
             if (isFromWeatherActivity) {
                 Intent intent = new Intent(this, WeatherActivity.class);
                 startActivity(intent);
             }
-        }*/
+            finish();
+        }
     }
 }
