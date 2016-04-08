@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.coolweather.service.AutoUpdateService;
 import com.example.coolweather.util.HttpUtil;
 import com.example.coolweather.util.Utility;
 import com.example.database.HttpCallbackListener;
@@ -65,10 +66,11 @@ public class WeatherActivity extends Activity implements View.OnClickListener{
         temp2Text.setText(preferences.getString("temp2",""));
         weatherDescText.setText(preferences.getString("weather_desc",""));
         publishText.setText("今天"+preferences.getString("publish_time","")+"发布");
-        currentDateText.setText(preferences.getString("current_date",""));
+        currentDateText.setText(preferences.getString("current_date", ""));
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
-
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 
     private void queryWeatherCode(String countyCode) {
